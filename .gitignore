@@ -64,3 +64,23 @@ Makefile.in
 /m4/lt*.m4
 /py-compile
 /stamp-h1
+
+# WASM build artifacts
+*.wasm
+*.js
+dist/
+build-*/
+
+# Development dependencies  
+node_modules/
+.vscode/
+.vs/
+
+# Platform-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
