@@ -1,23 +1,14 @@
-# libxml2
+# @discere-os/libxml2.wasm
 
-libxml2 is an XML toolkit implemented in C, originally developed for
-the GNOME Project.
+WebAssembly port of libxml2 - XML parsing and manipulation library with comprehensive XPath and schema support.
 
-Official releases can be downloaded from
-<https://download.gnome.org/sources/libxml2/>
+[![CI/CD](https://github.com/discere-os/discere-nucleus/actions/workflows/libxml2-wasm-ci.yml/badge.svg)](https://github.com/discere-os/discere-nucleus/actions)
+[![JSR](https://jsr.io/badges/@discere-os/libxml2.wasm)](https://jsr.io/@discere-os/libxml2.wasm)
+[![npm version](https://badge.fury.io/js/@discere-os%2Flibxml2.wasm.svg)](https://badge.fury.io/js/@discere-os%2Flibxml2.wasm)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](Copyright)
+[![Status](https://img.shields.io/badge/status-alpha-orange.svg)](https://github.com/discere-os/discere-nucleus)
 
-The git repository is hosted on GNOME's GitLab server:
-<https://gitlab.gnome.org/GNOME/libxml2>
-
-Bugs should be reported at
-<https://gitlab.gnome.org/GNOME/libxml2/-/issues>.
-
-Documentation is available at
-<https://gitlab.gnome.org/GNOME/libxml2/-/wikis>
-
-## License
-
-This code is released under the MIT License, see the Copyright file.
+libxml2 is an XML toolkit implemented in C, originally developed for the GNOME Project.
 
 ## Security
 
@@ -184,4 +175,21 @@ tests if possible.
 - Igor Zlatkovic for the Windows port
 - Aleksey Sanin
 - Nick Wellnhofer
+
+## 💖 Support This Work
+
+This WebAssembly port is part of a larger effort to bring professional desktop applications to browsers with native performance.
+
+**👨‍💻 About the Maintainer**: [Isaac Johnston (@superstructor)](https://github.com/superstructor) - Building foundational browser-native computing infrastructure through systematic C/C++ to WebAssembly porting.
+
+**📊 Impact**: 70+ open source WASM libraries enabling professional applications like Blender, GIMP, and scientific computing tools to run natively in browsers.
+
+**🚀 Your Support Enables**:
+- Continued maintenance and updates
+- Performance optimizations
+- New library ports and integrations
+- Documentation and tutorials
+- Cross-browser compatibility testing
+
+**[💖 Sponsor this work](https://github.com/sponsors/superstructor)** to help build the future of browser-native computing.
 
