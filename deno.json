@@ -1,0 +1,14 @@
+{
+  "name": "@discere-os/libxml2.wasm",
+  "exports": {
+    ".": "./",
+    "./side": "./install/wasm/libxml2-side.wasm",
+    "./main": "./install/wasm/libxml2-main.js"
+  },
+  "tasks": {
+    "build:main:meson": "meson setup build-main --cross-file=scripts/emscripten.cross -Dmain_module=true -Dside_module=false -Dsimd=true --prefix=$PWD/install -Dlibdir=wasm -Dbindir=wasm && meson compile -C build-main libxml2-main && meson install -C build-main",
+    "build:side:meson": "meson setup build-side --cross-file=scripts/emscripten.cross -Dmain_module=false -Dside_module=true -Dsimd=true --prefix=$PWD/install -Dlibdir=wasm -Dbindir=wasm && meson compile -C build-side libxml2-side && meson install -C build-side && python3 scripts/postinstall.py $PWD/install",
+    "build:wasm:meson": "deno task build:main:meson && deno task build:side:meson"
+  }
+}
+
